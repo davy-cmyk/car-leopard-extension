@@ -1,0 +1,38 @@
+#cl-insight-badge {
+  position: fixed;
+  right: 16px;
+  bottom: 18px;
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 999px;
+  background: rgba(26, 20, 16, 0.92);
+  color: #F5F1EA;
+  border: 1px solid rgba(198, 146, 0, 0.55);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  font: 600 13px/1.1 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  cursor: pointer;
+  user-select: none;
+}
+
+#cl-insight-badge:hover { transform: translateY(-1px); }
+
+#cl-insight-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #C69200;
+  box-shadow: 0 0 0 4px rgba(198,146,0,0.14);
+}
+
+#cl-insight-sub { font-weight: 500; opacity: 0.85; }
+
+#cl-insight-close {
+  margin-left: 4px;
+  opacity: 0.65;
+  font-weight: 700;
+}
+
+#cl-insight-close:hover { opacity: 1; }
