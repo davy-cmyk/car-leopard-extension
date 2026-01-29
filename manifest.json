@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Car Leopard Insight",
+  "version": "0.1.0",
+  "description": "Shows a Car Leopard Insight badge on vehicle listing pages when a VIN is detected.",
+  "permissions": [],
+  "host_permissions": [
+    "https://www.cargurus.com/*",
+    "https://www.autotrader.com/*",
+    "https://*.autotrader.com/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.cargurus.com/*",
+        "https://www.autotrader.com/*",
+        "https://*.autotrader.com/*",
+        "https://*/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
